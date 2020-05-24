@@ -6,9 +6,11 @@ header{
   justify-content: space-between;
   align-items: flex-start;
   border-bottom: .2em dashed @navigation-border;
+  .mobile();
+  
+
     h1{
       display:flex;
-      //width: 20%;
       margin-left: 2em;
       margin-top: 1em;
       font-size: 4.5em;
@@ -22,6 +24,7 @@ header{
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: flex-start;
+    .mobile();
     
      img{
       width: 100%;
@@ -29,23 +32,24 @@ header{
   
     h2{
     width:35%;
+    .mobile();
     }
 
     P{
       width:80%;
-      
+      .mobile();
     }
   }
 }
 
 .home {
-    
 
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    .mobile();
         
     .text-content {
       width: 48%;
@@ -66,6 +70,7 @@ header{
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    .mobile();
 
     .text-content {
       padding-left: 1%;
@@ -93,7 +98,8 @@ header{
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
-
+    .mobile();
+  
     .destination {
       width: 30%;
       margin-bottom: 30px;
