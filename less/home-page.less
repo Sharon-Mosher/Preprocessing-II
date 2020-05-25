@@ -1,3 +1,45 @@
+header{
+  width: 100%;
+  margin: 40px 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: .2em dashed @navigation-border;
+  
+    h1{
+      display:flex;
+      margin-left: 2em;
+      margin-top: 1em;
+      font-size: 4.5em;
+      font-weight: 400;
+     }
+
+   .intro{
+    width: 100%;
+    margin: 30px 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    .mobile();
+    
+     img{
+      width: 100%;
+     }
+  
+    h2{
+    width:35%;
+    .mobile();
+    }
+
+    P{
+      width:80%;
+      .mobile();
+    }
+  }
+}
+
 .home {
 
   .content-section {
@@ -5,17 +47,24 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-   
-    
+    .mobile();
+    border-top: .2em dashed @navigation-border;
+      
     .text-content {
       width: 48%;
       padding-right: 1%;
+      margin-top: 2em;
+      .mobile();
+
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      margin-top: 2em;
+      @media(max-width: 500px){
+          width:100%;
+      }
 
       img {
         border-radius: 10px;
@@ -26,6 +75,10 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    @media(max-width: 500px){
+      width:100%;
+      flex-direction: column-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -35,12 +88,16 @@
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+      @media(max-width: 500px){
+        width:100%;
+      }
     }
   }
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    
 
     img {
       border-radius: 10px;
@@ -52,10 +109,16 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
-
+    .mobile();
+  
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      .mobile();
+
+      .btn{
+        .button(45%, 200);
+      }
     }
   }
-}// home
+}
